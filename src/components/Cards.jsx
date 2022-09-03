@@ -6,7 +6,7 @@ import SingleCard from "./SingleCard";
 
 export const Cards = () => {
     return (
-        <div className="w-full bg-white lg:py-[10rem] md:py-[6rem] py-[4rem] px-4">
+        <div className="w-full bg-white lg:py-[6rem] md:py-[4rem] py-[3rem] px-4">
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
                 <SingleCard
                     img={Single}
