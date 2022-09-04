@@ -6,15 +6,14 @@ import {
     FaInstagram,
     FaTwitterSquare,
 } from "react-icons/fa"
+import Logo from "./Logo";
 
 export const Footer = () => {
     return (
         <>
             <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
                 <div>
-                    <h1 className="w-full text-3xl font-bold text-[#00df9a] uppercase">
-                        React.
-                    </h1>
+                    <Logo />
                     <p className="py-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Beatae accusantium et culpa. Fugiat, facere aperiam.
@@ -70,7 +69,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#00df9a] justify-center font-medium text-white h-16 flex items-center">
+            <div className="bg-[#00df9a] justify-center font-medium text-black h-16 flex items-center">
                 &copy; 2022. All right reserved.
             </div>
         </>

@@ -6,7 +6,8 @@ import SingleCard from "./SingleCard";
 
 export const Cards = () => {
     return (
-        <div className="w-full bg-white lg:py-[6rem] md:py-[4rem] py-[3rem] px-4">
+        <div className="w-full bg-white lg:pt-[6rem] md:pt-[4rem] pt-[3rem] lg:pb-[4rem] md:pb-[3rem] pb-[2rem] px-4">
+            <h1 className="w-full lg:text-4xl md:text-3xl text-2xl text-[#000] font-bold text-center mb-12">Pricing <span className="text-[#00df9a]">Plans</span></h1>
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
                 <SingleCard
                     img={Single}

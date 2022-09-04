@@ -9,13 +9,14 @@ const SingleCard = ({ userType, img, price, features, classname }) => {
                 alt=""
             />
             <h2 className="text-2xl font-bold text-center py-8">{userType}</h2>
-            <p className="text-center font-bold text-4xl mb-4">${price}</p>
+            <p className="text-center font-bold text-4xl">${price}</p>
             <div className="text-center font-medium">
                 {features.map((feature, index) => {
+                    console.log( index )
                     return (
                         <p
                             key={feature.toString()}
-                            className={`py-2 mx-8 border-b`}
+                            className={`${index === 0 ? 'py-2 mx-8 border-b mt-8' : 'py-2 mx-8 border-b'}`}
                         >
                             {feature}
                         </p>
