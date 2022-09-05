@@ -1,4 +1,5 @@
 import React from "react"
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Typed from "react-typed"
 
 const Hero = () => {
@@ -31,6 +32,14 @@ const Hero = () => {
                 <button className="btn-primary">
                     Get Started
                 </button>
+
+                {/* <button className="group text-white w-fit px-6 py-3 mx-auto mt-6 flex items-center rounded-sm bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer shadow-sm">
+                    Get Started
+                    <span className="group-hover:rotate-90 duration-300">
+                        <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                    </span>
+                </button> */}
+
             </div>
         </div>
     )

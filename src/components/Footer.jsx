@@ -31,7 +31,7 @@ export const Footer = () => {
 
                     <div className="lg:col-span-2 flex justify-between mt-6">
                         <div>
-                            <h6 className="font-medium text-gray-400">
+                            <h6 className="font-semibold text-gray-400 text-2xl">
                                 Solutions
                             </h6>
                             <ul>
@@ -43,7 +43,7 @@ export const Footer = () => {
                         </div>
 
                         <div>
-                            <h6 className="font-medium text-gray-400">
+                            <h6 className="font-semibold text-gray-400 text-2xl">
                                 Support
                             </h6>
                             <ul>
@@ -55,7 +55,7 @@ export const Footer = () => {
                         </div>
 
                         <div>
-                            <h6 className="font-medium text-gray-400">
+                            <h6 className="font-semibold text-gray-400 text-2xl">
                                 Company
                             </h6>
                             <ul>
@@ -68,7 +68,7 @@ export const Footer = () => {
                         </div>
 
                         <div>
-                            <h6 className="font-medium text-gray-400">Legal</h6>
+                            <h6 className="font-semibold text-gray-400 text-2xl">Legal</h6>
                             <ul>
                                 <li className="py-2 text-sm">Claim</li>
                                 <li className="py-2 text-sm">Policy</li>

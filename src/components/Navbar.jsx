@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import Logo from "./Logo"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
+import Menu from "./Menu"
 
 export default function Navbar() {
     const [nav, setNav] = useState(false)
@@ -11,27 +12,17 @@ export default function Navbar() {
         setNav(!nav)
     }
 
+    useEffect(() => {}, [darkMode])
+
     const darkModeHandler = () => {
         setDarkMode(!darkMode)
     }
 
-    useEffect(() => {
-        // const html = document.getElementsByTagName('html')
-        // console.log(html) 
-        // html.classList.add("dark")
-        // return () => {
-        //     html.classList.remove("dark")
-        // }
-    }, [])
     return (
         <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
             <Logo />
             <ul className="hidden md:flex">
-                <li className="p-4">Home</li>
-                <li className="p-4">Company</li>
-                <li className="p-4">Resources</li>
-                <li className="p-4">About</li>
-                <li className="p-4">Contact</li>
+                <Menu />
             </ul>
             <div onClick={navHandler} className="block md:hidden">
                 {nav ? (
@@ -48,11 +39,7 @@ export default function Navbar() {
                 }
             >
                 <Logo classname="pl-[1rem]" />
-                <li className="p-4 border-b border-gray-600">Home</li>
-                <li className="p-4 border-b border-gray-600">Company</li>
-                <li className="p-4 border-b border-gray-600">Resources</li>
-                <li className="p-4 border-b border-gray-600">About</li>
-                <li className="p-4">Contact</li>
+                <Menu className="border-b border-gray-600" />
             </ul>
 
             <div
