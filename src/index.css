@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;600;700&display=swap');
-body {
-	/* background: #000; */
-}
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +9,7 @@ body {
 		font-family: 'Raleway', sans-serif;
 	}
 }
+
 @layer components {
 	.btn-primary {
 		@apply bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black;
